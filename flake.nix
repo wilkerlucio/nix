@@ -34,7 +34,9 @@
           "beeper"
           "chatgpt"
           "cljstyle"
+          "intellij-idea"
           "roam-research"
+          "slack"
           "spotify"
         ];
 
