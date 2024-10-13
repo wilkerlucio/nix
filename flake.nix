@@ -38,6 +38,7 @@
           "intellij-idea"
           "iterm2"
           "istat-menus"
+          "raycast"
           "roam-research"
           "slack"
           "spotify"
