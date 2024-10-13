@@ -32,6 +32,7 @@
 
         casks = [
           "beeper"
+          "chatgpt"
           "cljstyle"
           "roam-research"
           "spotify"
