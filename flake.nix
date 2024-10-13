@@ -68,8 +68,14 @@
           "/System/Applications/System Settings.app"
         ];
 
+        # disable hold for accent characters
+        NSGlobalDomain.ApplePressAndHoldEnabled = false;
+
         NSGlobalDomain.AppleInterfaceStyle = "Dark";
+
+        # key repeat initial delay
         NSGlobalDomain.InitialKeyRepeat = 2;
+        # key repeat speed
         NSGlobalDomain.KeyRepeat = 2;
       };
 
