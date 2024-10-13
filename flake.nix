@@ -33,6 +33,7 @@
         ];
 
         casks = [
+          "beeper"
           "cljstyle"
           "spotify"
         ];
