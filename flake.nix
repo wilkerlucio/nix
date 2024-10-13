@@ -67,6 +67,10 @@
           "/Applications/iTerm.app"
           "/System/Applications/System Settings.app"
         ];
+
+        NSGlobalDomain.AppleInterfaceStyle = "Dark";
+        NSGlobalDomain.InitialKeyRepeat = 2;
+        NSGlobalDomain.KeyRepeat = 2;
       };
 
       # Auto upgrade nix package and the daemon service.
