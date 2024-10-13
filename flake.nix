@@ -34,6 +34,7 @@
 
         casks = [
           "cljstyle"
+          "spotify"
         ];
 
         masApps = {
