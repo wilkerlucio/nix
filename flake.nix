@@ -37,6 +37,7 @@
           "cljstyle"
           "intellij-idea"
           "iterm2"
+          "istat-menus"
           "roam-research"
           "slack"
           "spotify"
