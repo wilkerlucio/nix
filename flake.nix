@@ -31,10 +31,13 @@
         ];
 
         casks = [
+          # commands
+          "cljstyle"
+
+          # apps
           "arc"
           "beeper"
           "chatgpt"
-          "cljstyle"
           "intellij-idea"
           "iterm2"
           "istat-menus"
