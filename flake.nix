@@ -31,13 +31,16 @@
         ];
 
         casks = [
+          "arc"
           "beeper"
           "chatgpt"
           "cljstyle"
           "intellij-idea"
+          "iterm2"
           "roam-research"
           "slack"
           "spotify"
+          "visual-studio-code"
         ];
 
         masApps = {
@@ -47,6 +50,21 @@
         onActivation.cleanup = "zap";
         onActivation.autoUpdate = true;
         onActivation.upgrade = true;
+      };
+
+      system.defaults = {
+        dock.persistent-apps = [
+          "/Applications/Roam Research.app"
+          "/Applications/Arc.app"
+          "/System/Applications/Calendar.app"
+          "/Applications/Things3.app"
+          "/System/Applications/Notes.app"
+          "/Applications/IntelliJ IDEA.app"
+          "/Applications/Visual Studio Code.app"
+          "/Applications/Beeper.app"
+          "/Applications/iTerm.app"
+          "/System/Applications/System Settings.app"
+        ];
       };
 
       # Auto upgrade nix package and the daemon service.
