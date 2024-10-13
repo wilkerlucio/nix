@@ -1,5 +1,5 @@
 {
-  description = "Example Darwin system flake";
+  description = "Wilker Darwin system flake";
 
   inputs = {
     nix-homebrew.url = "github:zhaofengli-wip/nix-homebrew";
