@@ -20,7 +20,6 @@
         [
           pkgs.alacritty
           pkgs.git
-          pkgs.roam-research
         ];
 
       homebrew = {
@@ -35,6 +34,7 @@
         casks = [
           "beeper"
           "cljstyle"
+          "roam-research"
           "spotify"
         ];
 
