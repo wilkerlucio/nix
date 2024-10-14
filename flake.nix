@@ -16,10 +16,17 @@
 
       # List packages installed in system profile. To search by name, run:
       # $ nix-env -qaP | grep wget
-      environment.systemPackages =
-        [
-          pkgs.git
-        ];
+      environment.systemPackages = with pkgs; [
+        babahska
+        bun
+        clojure
+        clojure-lsp
+        corepack # npm, pnpm, yarn
+        fx
+        jdk21
+        git
+        jq
+      ];
 
       homebrew = {
         enable = true;
@@ -38,6 +45,8 @@
           "arc"
           "beeper"
           "chatgpt"
+          "discord"
+          "iina"
           "intellij-idea"
           "iterm2"
           "istat-menus"
@@ -45,6 +54,7 @@
           "roam-research"
           "slack"
           "spotify"
+          "the-unarchiver"
           "visual-studio-code"
         ];
 
