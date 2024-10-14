@@ -3,11 +3,12 @@
 
   inputs = {
     nix-homebrew.url = "github:zhaofengli-wip/nix-homebrew";
-    nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-24.05-darwin";
     nix-darwin.url = "github:LnL7/nix-darwin";
     nix-darwin.inputs.nixpkgs.follows = "nixpkgs";
+    nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
     home-manager.url = "github:nix-community/home-manager/release-24.05";
-    home-manager.inputs.nixpkgs.follows = "nixpkgs";
+    home-manager.inputs.nixpkgs.follows = "nixpkgs-unstable";
   };
 
   outputs = inputs@{ self, nix-darwin, nixpkgs, nix-homebrew, home-manager, ... }:
@@ -19,7 +20,7 @@
       # List packages installed in system profile. To search by name, run:
       # $ nix-env -qaP | grep wget
       environment.systemPackages = with pkgs; [
-        babahska
+        babashka
         bun
         clojure
         clojure-lsp

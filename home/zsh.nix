@@ -1,9 +1,4 @@
-{
-  config,
-  pkgs,
-  lib,
-  ...
-}: {
+{ ... }: {
   enable = true;
   shellAliases = {
     g = "git status";

@@ -1,5 +1,4 @@
-{ config, lib, pkgs, ... }:
-{
+{ ... }: {
   enable = true;
   userName = "Wilker Lucio";
   userEmail = "wilkerlucio@gmail.com";
