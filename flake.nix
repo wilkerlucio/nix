@@ -6,9 +6,11 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
     nix-darwin.url = "github:LnL7/nix-darwin";
     nix-darwin.inputs.nixpkgs.follows = "nixpkgs";
+    home-manager.url = "github:nix-community/home-manager/release-24.05";
+    home-manager.inputs.nixpkgs.follows = "nixpkgs-unstable";
   };
 
-  outputs = inputs@{ self, nix-darwin, nixpkgs, nix-homebrew }:
+  outputs = inputs@{ self, nix-darwin, nixpkgs, nix-homebrew, home-manager, ... }:
   let
     configuration = { pkgs, ... }: {
       # Allow unfree packages
@@ -90,7 +92,7 @@
         # key repeat initial delay
         NSGlobalDomain.InitialKeyRepeat = 2;
         # key repeat speed
-        NSGlobalDomain.KeyRepeat = 2;
+        NSGlobalDomain.KeyRepeat = 1;
       };
 
       # Auto upgrade nix package and the daemon service.
@@ -133,6 +135,13 @@
             # User owning the Homebrew prefix
             user = "wilkerlucio";
           };
+        }
+        home-manager.darwinModules.home-manager
+        {
+          # `home-manager` config
+          home-manager.useGlobalPkgs = true;
+          home-manager.useUserPackages = true;
+          home-manager.users.wilkerlucio = import ./home.nix;
         }
       ];
     };
