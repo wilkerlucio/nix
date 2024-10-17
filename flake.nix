@@ -73,6 +73,7 @@
 
       system.defaults = {
         dock.persistent-apps = [
+          "/Applications/ChatGPT.app"
           "/Applications/Roam Research.app"
           "/Applications/Arc.app"
           "/System/Applications/Calendar.app"
