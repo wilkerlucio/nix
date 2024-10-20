@@ -1,5 +1,3 @@
-Setting this up.
-
 ## Install Nix
 
 ```
