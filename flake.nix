@@ -92,7 +92,7 @@
         NSGlobalDomain.AppleInterfaceStyle = "Dark";
 
         # key repeat initial delay
-        NSGlobalDomain.InitialKeyRepeat = 2;
+        NSGlobalDomain.InitialKeyRepeat = 1;
         # key repeat speed
         NSGlobalDomain.KeyRepeat = 1;
       };
