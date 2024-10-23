@@ -46,6 +46,7 @@
 
           # apps
           "arc"
+          "bartender"
           "beeper"
           "chatgpt"
           "discord"
