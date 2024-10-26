@@ -54,6 +54,7 @@
           "intellij-idea"
           "iterm2"
           "istat-menus"
+          "logseq"
           "raycast"
           "roam-research"
           "slack"
