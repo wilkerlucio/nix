@@ -94,9 +94,9 @@
         NSGlobalDomain.AppleInterfaceStyle = "Dark";
 
         # key repeat initial delay
-        NSGlobalDomain.InitialKeyRepeat = 1;
+        NSGlobalDomain.InitialKeyRepeat = 2;
         # key repeat speed
-        NSGlobalDomain.KeyRepeat = 1;
+        NSGlobalDomain.KeyRepeat = 2;
       };
 
       # Auto upgrade nix package and the daemon service.
