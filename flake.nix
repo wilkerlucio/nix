@@ -57,6 +57,7 @@
           "logseq"
           "raycast"
           "roam-research"
+          "tuxguitar"
           "slack"
           "spotify"
           "the-unarchiver"
